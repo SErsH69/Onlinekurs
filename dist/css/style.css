@@ -1895,13 +1895,13 @@ textarea {
   max-height: 100%;
   display: inline-block;
   vertical-align: middle;
-  max-width: 31.40625vw;
+  max-width: 592px;
   text-align: left;
   width: 100%;
   background: var(--white);
   border-radius: 0.8333333333vw;
   position: relative;
-  padding: 2.5vw;
+  padding: 40px;
   box-shadow: 0px 9px 19px 0px rgba(0, 0, 0, 0.1), 0px 35px 35px 0px rgba(0, 0, 0, 0.09), 0px 80px 48px 0px rgba(0, 0, 0, 0.05), 0px 141px 57px 0px rgba(0, 0, 0, 0.01), 0px 221px 62px 0px rgba(0, 0, 0, 0);
 }
 
@@ -1909,6 +1909,7 @@ textarea {
   position: absolute;
   top: 1.25vw;
   right: 1.25vw;
+  font-size: 0;
   cursor: pointer;
   width: 1.25vw;
   height: 1.25vw;
