@@ -8,8 +8,8 @@
     <title>Страница Стажировки</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap&_v=20240625104501" rel="stylesheet">
-	<link rel="stylesheet" href="css/style.css?_v=20240625104501">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap&_v=20240625112825" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css?_v=20240625112825">
 </head>
 <body>
     <div class="wrapper" id="app" :class="{isMobile, isTablet}">
@@ -400,64 +400,38 @@
         
     </div>
 </div>
-<!-- <div class="modal modal_sends" data-modal="2">
+<div class="modal" data-modal="2">
     <div class="modal__in">
-        <div class="modal__closer"></div>
-        <div class="modal__title">Отписаться от рассылки</div>
-        <div class="modal__text">Для того чтобы отписаться от рассылки <br>введите номер телефона</div>
-        <form action="/unsubcribe" method="POST" class="modal__form">
-            <div class="modal__form--input">
-                <input type="tel" id="tel2" name="phone" placeholder="Телефон" required>
-                <label for="tel2">Телефон</label>
+        <div class="modal__closer">Назад</div>
+        <div class="modal__title">Откликнуться на стажировку</div>
+        <form action="">
+            <div class="modal__input">
+                <label for="name1">Имя*</label>
+                <input type="text" id="name1" name="fio" placeholder="Имя" required>
             </div>
-            <div class="modal__form--submit">
-                <input id="sb1" type="submit" value="Отписаться">
-                <label for="sb1"></label>
+            <div class="modal__input">
+                <label for="tel3">Номер телефона*</label>
+                <input type="tel" id="tel3" name="phone" placeholder="Номер телефона" required>
             </div>
-        </form>
-    </div>
-</div> -->
-<div class="modal modal_check" data-modal="3">
-    <div class="modal__in">
-        <div class="modal__closer"></div>
-        <div class="modal__title">Заполните форму</div>
-        <form action="/newform" class="modal__form" method="POST">
-            <div class="modal__form--input">
-                <input type="text" id="name1" name="fio" placeholder="Ф.И.О" required>
-                <label for="name1">Ф.И.О</label>
+            <div class="modal__input">
+                <label for="email1">Email*</label>
+                <input type="email" id="email1" name="email" placeholder="Email" required>
             </div>
-            <div class="modal__form--input">
-                <input type="text" id="date1" name="birthday" placeholder="Дата рождения" required>
-                <label for="date1">Дата рождения</label>
+            <div class="modal__textarea">
+                <label for="textarea1">Сопроводительное письмо</label>
+                <textarea name="" id="textarea1" placeholder="Сопроводительное письмо"></textarea>
             </div>
-            <div class="modal__form--input">
-                <input type="text" id="adr1" name="address" placeholder="Адрес проживания" required>
-                <label for="adr1">Адрес проживания</label>
-            </div>
-            <div class="modal__form--input">
-                <input type="email" id="email1" name="email" placeholder="Почта" required>
-                <label for="email1">Почта</label>
-            </div>
-            <div class="modal__form--input">
-                <input type="tel" id="tel3" name="phone" placeholder="Телефон" required>
-                <label for="tel3">Телефон</label>
-            </div>
-            <label class="modal__form--custom-checkbox">
-                <input type="checkbox" name="checkbox1" value="checked">
-                <span><span>Я даю свое <a href="#" target="_blank"> Согласие на обработку персональных данных</a></span></span>
+            <label class="modal__text">
+                Поля, отмеченные *, являются обязательными <br><br>
+                Нажимая кнопку Отправить заявку, вы подтверждаете своё согласие на <a href="#">обработку персональных данных</a>
             </label>
-            <label class="modal__form--custom-checkbox">
-                <input type="checkbox" name="checkbox2" value="checked">
-                <span><span>Я даю свое Предварительное <br> <a href="#" target="_blank"> согласие на получение рекламных материалов</a></span></span>
-            </label>
-            <div class="modal__form--submit">
-                <input id="sb3" type="submit" value="Получить деньги">
-                <label for="sb3"></label>
+            <div class="modal__submit">
+                <input id="sb3" type="submit" value="Отправить">
             </div>
         </form>
     </div>
 </div>
     </div>
-    <script src="js/app.min.js?_v=20240625104501"></script>
+    <script src="js/app.min.js?_v=20240625112825"></script>
 </body>
 </html>
