@@ -8,8 +8,8 @@
     <title>Стажировки</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap&_v=20240625085655" rel="stylesheet">
-	<link rel="stylesheet" href="css/style.css?_v=20240625085655">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap&_v=20240625085938" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css?_v=20240625085938">
 </head>
 <body>
     <div class="wrapper" id="app" :class="{isMobile, isTablet}">
@@ -146,6 +146,7 @@
 </header>
         <main class="content">
             <div class="staj_block center_block">
+    <a href="/" class="staj_block__back" v-if="sizes.window <= 1023">На главную</a>
     <div class="staj_block__lside" v-if="sizes.window >= 1023">
 
     </div>
@@ -649,6 +650,6 @@
     </div>
 </div>
     </div>
-    <script src="js/app.min.js?_v=20240625085655"></script>
+    <script src="js/app.min.js?_v=20240625085938"></script>
 </body>
 </html>

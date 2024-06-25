@@ -3,6 +3,30 @@
     padding-top: vw(48);
     @media all and (max-width: 1023px) {
         padding-top: 20px;
+        flex-direction: column;
+    }
+    &__back {
+        text-decoration: none;
+        display: inline-block;
+        margin-bottom: 16px;
+        padding-left: 28px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 129%;
+        color: var(--grey);
+        position: relative;
+        &:before {
+            content: '';
+            position: absolute;
+            border: 1px solid var(--grey);
+            border-radius: 6px;
+            width: 20px;
+            height: 20px;
+            left: 0;
+            top: 50%;
+            margin-top: -10px;
+            background: url("data:image/svg+xml,%3Csvg width='12' height='12' viewBox='0 0 12 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M8.18246 2.13003C8.45583 2.4034 8.45583 2.84661 8.18246 3.11998L5.30244 6L8.18246 8.88003C8.45583 9.1534 8.45583 9.59661 8.18246 9.86998C7.9091 10.1433 7.46588 10.1433 7.19251 9.86998L3.81751 6.49498C3.54415 6.22161 3.54415 5.7784 3.81751 5.50503L7.19251 2.13003C7.46588 1.85666 7.9091 1.85666 8.18246 2.13003Z' fill='%23596077' /%3E%3C/svg%3E") 50% no-repeat;
+        }
     }
     &__lside {
         flex: 0 0 vw(278);
