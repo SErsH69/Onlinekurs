@@ -687,6 +687,7 @@ textarea {
 .staj_block {
   display: flex;
   padding-top: 2.5vw;
+  padding-bottom: 2.5vw;
 }
 
 .staj_block__back {
@@ -941,8 +942,8 @@ textarea {
 }
 
 .main_first__title {
-  font-family: var(--second-family);
-  font-weight: 300;
+  font-family: var(--third-family);
+  font-weight: 400;
   font-size: 2.9166666667vw;
   line-height: 114%;
   letter-spacing: 0.02em;
@@ -1031,8 +1032,8 @@ textarea {
 }
 
 .main_posts__title {
-  font-family: var(--second-family);
-  font-weight: 300;
+  font-family: var(--third-family);
+  font-weight: 400;
   font-size: 2.0833333333vw;
   line-height: 120%;
   color: var(--black);
@@ -1151,8 +1152,8 @@ textarea {
 }
 
 .main_why__title {
-  font-family: var(--second-family);
-  font-weight: 300;
+  font-family: var(--third-family);
+  font-weight: 400;
   font-size: 2.0833333333vw;
   line-height: 120%;
   letter-spacing: 0.02em;
@@ -1196,7 +1197,7 @@ textarea {
 
 .main_why__tit {
   font-family: var(--second-family);
-  font-weight: 300;
+  font-weight: 500;
   font-size: 1.25vw;
   line-height: 133%;
   letter-spacing: 0.02em;
@@ -1213,13 +1214,14 @@ textarea {
 
 .main_company {
   padding-top: 1.6666666667vw;
+  padding-bottom: 1.6666666667vw;
   overflow: hidden;
   background: var(--white);
 }
 
 .main_company__title {
-  font-family: var(--second-family);
-  font-weight: 300;
+  font-family: var(--third-family);
+  font-weight: 400;
   font-size: 2.0833333333vw;
   line-height: 120%;
   letter-spacing: 0.02em;
@@ -1264,16 +1266,12 @@ textarea {
 .main_company__name {
   text-align: center;
   font-family: var(--second-family);
-  font-weight: 300;
+  font-weight: 500;
   font-size: 0.8333333333vw;
   line-height: 125%;
   letter-spacing: 0.02em;
   text-align: center;
   color: var(--black);
-}
-
-.footer {
-  padding-top: 1.6666666667vw;
 }
 
 .footer__bg {
@@ -1637,6 +1635,7 @@ textarea {
 
   .staj_block {
     padding-top: 20px;
+    padding-bottom: 20px;
     flex-direction: column;
   }
 
@@ -1847,6 +1846,7 @@ textarea {
 
   .main_company {
     padding-top: 24px;
+    padding-bottom: 24px;
   }
 
   .main_company__title {
@@ -1874,10 +1874,6 @@ textarea {
 
   .main_company__name {
     font-size: 16px;
-  }
-
-  .footer {
-    padding-top: 24px;
   }
 
   .footer__bg {

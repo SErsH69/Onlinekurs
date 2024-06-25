@@ -1,8 +1,4 @@
 .footer {
-    padding-top: vw(32);
-    @media all and (max-width: 1023px) {
-        padding-top: 24px;
-    }
     &__bg {
         background: var(--violet);
         padding-top: vw(40);

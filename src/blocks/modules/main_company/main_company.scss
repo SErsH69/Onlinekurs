@@ -1,13 +1,15 @@
 .main_company {
     padding-top: vw(32);
+    padding-bottom: vw(32);
     overflow: hidden;
     background: var(--white);
     @media all and (max-width: 1023px) {
         padding-top: 24px;
+        padding-bottom: 24px;
     }
     &__title {
-        font-family: var(--second-family);
-        font-weight: 300;
+        font-family: var(--third-family);
+        font-weight: 400;
         font-size: vw(40);
         line-height: 120%;
         letter-spacing: 0.02em;
@@ -65,7 +67,7 @@
     &__name {
         text-align: center;
         font-family: var(--second-family);
-        font-weight: 300;
+        font-weight: 500;
         font-size: vw(16);
         line-height: 125%;
         letter-spacing: 0.02em;
