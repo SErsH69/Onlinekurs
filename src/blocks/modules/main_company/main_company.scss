@@ -1,6 +1,7 @@
 .main_company {
     padding-top: vw(32);
     overflow: hidden;
+    background: var(--white);
     @media all and (max-width: 1023px) {
         padding-top: 24px;
     }

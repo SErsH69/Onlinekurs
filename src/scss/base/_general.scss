@@ -13,6 +13,7 @@
 	--orange-hover: #ff5e25;
     --font-family: "Noto Sans", sans-serif;
     --second-family: "Stapel", sans-serif;
+    --third-family: "Stapel_Regular", sans-serif;
 }
 body {
     box-sizing: border-box;
@@ -30,8 +31,8 @@ html,
 body {
     margin: 0;
     padding: 0;
-    background: var(--white);
     height: auto;
+    background: var(--background);
 }
 .ovh {
     overflow: hidden;

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="./img/favicon.png">
-    <title>Главная</title>
+    <title>Стажировки</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap&_v=20240625085655" rel="stylesheet">
@@ -145,198 +145,244 @@
     </div>
 </header>
         <main class="content">
-            <div class="main_first">
-    <div class="main_first__in center_block">
-        <div class="main_first__title">Больше чем стажировки</div>
-        <div class="main_first__text">Выберите направления бизнеса и получите реальный опыт на стажировке</div>
-        <a href="#" class="main_first__btn">Посмотреть стажировки</a>
-        <div class="main_first__item">
-                <div class="video-preview" style="background-image: url('./img/main_first.png');" data-youtube-url="https://www.youtube.com/embed/Zv11L-ZfrSg?si=eGhz35dogqTeYhSI">
-                    <button class="play-button"></button>
-                </div>
-            <div class="video-container" style="display: none;">
-                <iframe class="youtube-video" width="560" height="315" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-        </div>
+            <div class="staj_block center_block">
+    <div class="staj_block__lside" v-if="sizes.window >= 1023">
+
     </div>
-</div>
-            <div class="main_posts">
-    <div class="main_posts__in center_block">
-        <div class="main_posts__title">Последние стажировки</div>
-        <div class="main_posts__blocks">
-            <div class="main_posts__block">
-                <div class="main_posts__l-side">
-                    <div class="main_posts__tit">Начинающий специалист/стажер</div>
-                    <div class="main_posts__price">15 000 - 30 000 ₽</div>
-                    <div class="main_posts__work">X5 Retail Group</div>
-                    <button data-modal-id="2" class="main_posts__btn">Откликнуться</button>
-                </div>
-                <div class="main_posts__r-side">
-                    <picture><source srcset="./img/s1.webp" type="image/webp"><img src="./img/s1.png" alt=""></picture>
-                </div>
+    <div class="staj_block__r-">
+        <div class="staj_block__top">
+            <div class="staj_block__titles">
+                <h1 class="staj_block__title">Стажировки</h1>
+                <div class="staj_block__search">Найдено 1052 стажировки</div>
             </div>
-            <div class="main_posts__block">
-                <div class="main_posts__l-side">
-                    <div class="main_posts__tit">Начинающий специалист/стажер</div>
-                    <div class="main_posts__price">15 000 - 30 000 ₽</div>
-                    <div class="main_posts__work">X5 Retail Group</div>
-                    <button data-modal-id="2" class="main_posts__btn">Откликнуться</button>
-                </div>
-                <div class="main_posts__r-side">
-                    <picture><source srcset="./img/s2.webp" type="image/webp"><img src="./img/s2.png" alt=""></picture>
-                </div>
+            <div class="staj_block__views" v-if="sizes.window >= 1023">
+                <div class="staj_block__view staj_block__view--vitrin isActive"></div>
+                <div class="staj_block__view staj_block__view--list"></div>
             </div>
-            <div class="main_posts__block">
-                <div class="main_posts__l-side">
-                    <div class="main_posts__tit">Начинающий специалист/стажер</div>
-                    <div class="main_posts__price">15 000 - 30 000 ₽</div>
-                    <div class="main_posts__work">X5 Retail Group</div>
-                    <button data-modal-id="2" class="main_posts__btn">Откликнуться</button>
+        </div>
+        <div class="staj_block__content staj_block__content--vitrin isActive">
+            <div class="staj_block__blocks">
+                <div class="staj_block__block">
+                    <div class="staj_block__l-side">
+                        <div class="staj_block__tit">Начинающий специалист/стажер</div>
+                        <div class="staj_block__price">15 000 - 30 000 ₽</div>
+                        <div class="staj_block__work">X5 Retail Group</div>
+                        <button data-modal-id="2" class="staj_block__btn">Откликнуться</button>
+                    </div>
+                    <div class="staj_block__r-side">
+                        <picture><source srcset="./img/s1.webp" type="image/webp"><img src="./img/s1.png" alt=""></picture>
+                    </div>
                 </div>
-                <div class="main_posts__r-side">
-                    <picture><source srcset="./img/s3.webp" type="image/webp"><img src="./img/s3.png" alt=""></picture>
+                <div class="staj_block__block">
+                    <div class="staj_block__l-side">
+                        <div class="staj_block__tit">Начинающий специалист/стажер</div>
+                        <div class="staj_block__price">15 000 - 30 000 ₽</div>
+                        <div class="staj_block__work">X5 Retail Group</div>
+                        <button data-modal-id="2" class="staj_block__btn">Откликнуться</button>
+                    </div>
+                    <div class="staj_block__r-side">
+                        <picture><source srcset="./img/s2.webp" type="image/webp"><img src="./img/s2.png" alt=""></picture>
+                    </div>
                 </div>
-            </div>
-            <div class="main_posts__block">
-                <div class="main_posts__l-side">
-                    <div class="main_posts__tit">Начинающий специалист/стажер</div>
-                    <div class="main_posts__price">15 000 - 30 000 ₽</div>
-                    <div class="main_posts__work">X5 Retail Group</div>
-                    <button data-modal-id="2" class="main_posts__btn">Откликнуться</button>
+                <div class="staj_block__block">
+                    <div class="staj_block__l-side">
+                        <div class="staj_block__tit">Начинающий специалист/стажер</div>
+                        <div class="staj_block__price">15 000 - 30 000 ₽</div>
+                        <div class="staj_block__work">X5 Retail Group</div>
+                        <button data-modal-id="2" class="staj_block__btn">Откликнуться</button>
+                    </div>
+                    <div class="staj_block__r-side">
+                        <picture><source srcset="./img/s3.webp" type="image/webp"><img src="./img/s3.png" alt=""></picture>
+                    </div>
                 </div>
-                <div class="main_posts__r-side">
-                    <picture><source srcset="./img/s4.webp" type="image/webp"><img src="./img/s4.png" alt=""></picture>
+                <div class="staj_block__block">
+                    <div class="staj_block__l-side">
+                        <div class="staj_block__tit">Начинающий специалист/стажер</div>
+                        <div class="staj_block__price">15 000 - 30 000 ₽</div>
+                        <div class="staj_block__work">X5 Retail Group</div>
+                        <button data-modal-id="2" class="staj_block__btn">Откликнуться</button>
+                    </div>
+                    <div class="staj_block__r-side">
+                        <picture><source srcset="./img/s4.webp" type="image/webp"><img src="./img/s4.png" alt=""></picture>
+                    </div>
                 </div>
-            </div>
-            <div class="main_posts__block">
-                <div class="main_posts__l-side">
-                    <div class="main_posts__tit">Начинающий специалист/стажер</div>
-                    <div class="main_posts__price">15 000 - 30 000 ₽</div>
-                    <div class="main_posts__work">X5 Retail Group</div>
-                    <button data-modal-id="2" class="main_posts__btn">Откликнуться</button>
+                <div class="staj_block__block">
+                    <div class="staj_block__l-side">
+                        <div class="staj_block__tit">Начинающий специалист/стажер</div>
+                        <div class="staj_block__price">15 000 - 30 000 ₽</div>
+                        <div class="staj_block__work">X5 Retail Group</div>
+                        <button data-modal-id="2" class="staj_block__btn">Откликнуться</button>
+                    </div>
+                    <div class="staj_block__r-side">
+                        <picture><source srcset="./img/s5.webp" type="image/webp"><img src="./img/s5.png" alt=""></picture>
+                    </div>
                 </div>
-                <div class="main_posts__r-side">
-                    <picture><source srcset="./img/s5.webp" type="image/webp"><img src="./img/s5.png" alt=""></picture>
+                <div class="staj_block__block">
+                    <div class="staj_block__l-side">
+                        <div class="staj_block__tit">Начинающий специалист/стажер</div>
+                        <div class="staj_block__price">15 000 - 30 000 ₽</div>
+                        <div class="staj_block__work">X5 Retail Group</div>
+                        <button data-modal-id="2" class="staj_block__btn">Откликнуться</button>
+                    </div>
+                    <div class="staj_block__r-side">
+                        <picture><source srcset="./img/s6.webp" type="image/webp"><img src="./img/s6.png" alt=""></picture>
+                    </div>
                 </div>
-            </div>
-            <div class="main_posts__block">
-                <div class="main_posts__l-side">
-                    <div class="main_posts__tit">Начинающий специалист/стажер</div>
-                    <div class="main_posts__price">15 000 - 30 000 ₽</div>
-                    <div class="main_posts__work">X5 Retail Group</div>
-                    <button data-modal-id="2" class="main_posts__btn">Откликнуться</button>
+                <div class="staj_block__block">
+                    <div class="staj_block__l-side">
+                        <div class="staj_block__tit">Начинающий специалист/стажер</div>
+                        <div class="staj_block__price">15 000 - 30 000 ₽</div>
+                        <div class="staj_block__work">X5 Retail Group</div>
+                        <button data-modal-id="2" class="staj_block__btn">Откликнуться</button>
+                    </div>
+                    <div class="staj_block__r-side">
+                        <picture><source srcset="./img/s3.webp" type="image/webp"><img src="./img/s3.png" alt=""></picture>
+                    </div>
                 </div>
-                <div class="main_posts__r-side">
-                    <picture><source srcset="./img/s6.webp" type="image/webp"><img src="./img/s6.png" alt=""></picture>
+                <div class="staj_block__block">
+                    <div class="staj_block__l-side">
+                        <div class="staj_block__tit">Начинающий специалист/стажер</div>
+                        <div class="staj_block__price">15 000 - 30 000 ₽</div>
+                        <div class="staj_block__work">X5 Retail Group</div>
+                        <button data-modal-id="2" class="staj_block__btn">Откликнуться</button>
+                    </div>
+                    <div class="staj_block__r-side">
+                        <picture><source srcset="./img/s1.webp" type="image/webp"><img src="./img/s1.png" alt=""></picture>
+                    </div>
                 </div>
-            </div>
-            <div class="main_posts__block">
-                <div class="main_posts__l-side">
-                    <div class="main_posts__tit">Начинающий специалист/стажер</div>
-                    <div class="main_posts__price">15 000 - 30 000 ₽</div>
-                    <div class="main_posts__work">X5 Retail Group</div>
-                    <button data-modal-id="2" class="main_posts__btn">Откликнуться</button>
-                </div>
-                <div class="main_posts__r-side">
-                    <picture><source srcset="./img/s3.webp" type="image/webp"><img src="./img/s3.png" alt=""></picture>
-                </div>
-            </div>
-            <div class="main_posts__block">
-                <div class="main_posts__l-side">
-                    <div class="main_posts__tit">Начинающий специалист/стажер</div>
-                    <div class="main_posts__price">15 000 - 30 000 ₽</div>
-                    <div class="main_posts__work">X5 Retail Group</div>
-                    <button data-modal-id="2" class="main_posts__btn">Откликнуться</button>
-                </div>
-                <div class="main_posts__r-side">
-                    <picture><source srcset="./img/s1.webp" type="image/webp"><img src="./img/s1.png" alt=""></picture>
-                </div>
-            </div>
-            <div class="main_posts__block">
-                <div class="main_posts__l-side">
-                    <div class="main_posts__tit">Начинающий специалист/стажер</div>
-                    <div class="main_posts__price">15 000 - 30 000 ₽</div>
-                    <div class="main_posts__work">X5 Retail Group</div>
-                    <button data-modal-id="2" class="main_posts__btn">Откликнуться</button>
-                </div>
-                <div class="main_posts__r-side">
-                    <picture><source srcset="./img/s5.webp" type="image/webp"><img src="./img/s5.png" alt=""></picture>
+                <div class="staj_block__block">
+                    <div class="staj_block__l-side">
+                        <div class="staj_block__tit">Начинающий специалист/стажер</div>
+                        <div class="staj_block__price">15 000 - 30 000 ₽</div>
+                        <div class="staj_block__work">X5 Retail Group</div>
+                        <button data-modal-id="2" class="staj_block__btn">Откликнуться</button>
+                    </div>
+                    <div class="staj_block__r-side">
+                        <picture><source srcset="./img/s5.webp" type="image/webp"><img src="./img/s5.png" alt=""></picture>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="main_posts__more">
-            <a href="#">Показать все стажировки (246)</a>
-        </div>
-    </div>
-</div>
-            <div class="main_why">
-    <div class="main_why__in center_block">
-        <div class="main_why__title">Почему с нами хорошо</div>
-        <div class="main_why__blocks">
-            <div class="main_why__block">
-                <div class="main_why__img">
-                    <picture><source srcset="./img/w1.webp" type="image/webp"><img src="./img/w1.png" alt="Стажировки по интересам"></picture>
+        <div class="staj_block__content staj_block__content--list" v-if="sizes.window >= 1023">
+            <div class="staj_block__blocks">
+                <div class="staj_block__block">
+                    <div class="staj_block__l-side">
+                        <div class="staj_block__into">
+                            <div class="staj_block__tit">Начинающий специалист/стажер</div>
+                            <div class="staj_block__price">15 000 - 30 000 ₽</div>
+                            <div class="staj_block__work">X5 Retail Group</div>
+                        </div>
+                        <button data-modal-id="2" class="staj_block__btn">Откликнуться</button>
+                    </div>
+                    <div class="staj_block__r-side">
+                        <picture><source srcset="./img/s1.webp" type="image/webp"><img src="./img/s1.png" alt=""></picture>
+                    </div>
                 </div>
-                <div class="main_why__tit">Стажировки по интересам</div>
-                <div class="main_why__txt">Мы не вписываем стажеров в шаблоны, а хотим, чтобы каждый сам смог определить, что ему по душе.</div>
+                <div class="staj_block__block">
+                    <div class="staj_block__l-side">
+                        <div class="staj_block__into">
+                            <div class="staj_block__tit">Начинающий специалист/стажер</div>
+                            <div class="staj_block__price">15 000 - 30 000 ₽</div>
+                            <div class="staj_block__work">X5 Retail Group</div>
+                        </div>
+                        <button data-modal-id="2" class="staj_block__btn">Откликнуться</button>
+                    </div>
+                    <div class="staj_block__r-side">
+                        <picture><source srcset="./img/s2.webp" type="image/webp"><img src="./img/s2.png" alt=""></picture>
+                    </div>
+                </div>
+                <div class="staj_block__block">
+                    <div class="staj_block__l-side">
+                        <div class="staj_block__into">
+                            <div class="staj_block__tit">Начинающий специалист/стажер</div>
+                            <div class="staj_block__price">15 000 - 30 000 ₽</div>
+                            <div class="staj_block__work">X5 Retail Group</div>
+                        </div>
+                        <button data-modal-id="2" class="staj_block__btn">Откликнуться</button>
+                    </div>
+                    <div class="staj_block__r-side">
+                        <picture><source srcset="./img/s3.webp" type="image/webp"><img src="./img/s3.png" alt=""></picture>
+                    </div>
+                </div>
+                <div class="staj_block__block">
+                    <div class="staj_block__l-side">
+                        <div class="staj_block__into">
+                            <div class="staj_block__tit">Начинающий специалист/стажер</div>
+                            <div class="staj_block__price">15 000 - 30 000 ₽</div>
+                            <div class="staj_block__work">X5 Retail Group</div>
+                        </div>
+                        <button data-modal-id="2" class="staj_block__btn">Откликнуться</button>
+                    </div>
+                    <div class="staj_block__r-side">
+                        <picture><source srcset="./img/s4.webp" type="image/webp"><img src="./img/s4.png" alt=""></picture>
+                    </div>
+                </div>
+                <div class="staj_block__block">
+                    <div class="staj_block__l-side">
+                        <div class="staj_block__into">
+                            <div class="staj_block__tit">Начинающий специалист/стажер</div>
+                            <div class="staj_block__price">15 000 - 30 000 ₽</div>
+                            <div class="staj_block__work">X5 Retail Group</div>
+                        </div>
+                        <button data-modal-id="2" class="staj_block__btn">Откликнуться</button>
+                    </div>
+                    <div class="staj_block__r-side">
+                        <picture><source srcset="./img/s5.webp" type="image/webp"><img src="./img/s5.png" alt=""></picture>
+                    </div>
+                </div>
+                <div class="staj_block__block">
+                    <div class="staj_block__l-side">
+                        <div class="staj_block__into">
+                            <div class="staj_block__tit">Начинающий специалист/стажер</div>
+                            <div class="staj_block__price">15 000 - 30 000 ₽</div>
+                            <div class="staj_block__work">X5 Retail Group</div>
+                        </div>
+                        <button data-modal-id="2" class="staj_block__btn">Откликнуться</button>
+                    </div>
+                    <div class="staj_block__r-side">
+                        <picture><source srcset="./img/s6.webp" type="image/webp"><img src="./img/s6.png" alt=""></picture>
+                    </div>
+                </div>
+                <div class="staj_block__block">
+                    <div class="staj_block__l-side">
+                        <div class="staj_block__into">
+                            <div class="staj_block__tit">Начинающий специалист/стажер</div>
+                            <div class="staj_block__price">15 000 - 30 000 ₽</div>
+                            <div class="staj_block__work">X5 Retail Group</div>
+                        </div>
+                        <button data-modal-id="2" class="staj_block__btn">Откликнуться</button>
+                    </div>
+                    <div class="staj_block__r-side">
+                        <picture><source srcset="./img/s3.webp" type="image/webp"><img src="./img/s3.png" alt=""></picture>
+                    </div>
+                </div>
+                <div class="staj_block__block">
+                    <div class="staj_block__l-side">
+                        <div class="staj_block__into">
+                            <div class="staj_block__tit">Начинающий специалист/стажер</div>
+                            <div class="staj_block__price">15 000 - 30 000 ₽</div>
+                            <div class="staj_block__work">X5 Retail Group</div>
+                        </div>
+                        <button data-modal-id="2" class="staj_block__btn">Откликнуться</button>
+                    </div>
+                    <div class="staj_block__r-side">
+                        <picture><source srcset="./img/s1.webp" type="image/webp"><img src="./img/s1.png" alt=""></picture>
+                    </div>
+                </div>
+                <div class="staj_block__block">
+                    <div class="staj_block__l-side">
+                        <div class="staj_block__into">
+                            <div class="staj_block__tit">Начинающий специалист/стажер</div>
+                            <div class="staj_block__price">15 000 - 30 000 ₽</div>
+                            <div class="staj_block__work">X5 Retail Group</div>
+                        </div>
+                        <button data-modal-id="2" class="staj_block__btn">Откликнуться</button>
+                    </div>
+                    <div class="staj_block__r-side">
+                        <picture><source srcset="./img/s5.webp" type="image/webp"><img src="./img/s5.png" alt=""></picture>
+                    </div>
+                </div>
             </div>
-            <div class="main_why__block">
-                <div class="main_why__img">
-                    <picture><source srcset="./img/w2.webp" type="image/webp"><img src="./img/w2.png" alt="Реализуй свой потенциал"></picture>
-                </div>
-                <div class="main_why__tit">Реализуй свой потенциал</div>
-                <div class="main_why__txt">Найди единомышленников, которые помогут тебе раскрыться и воплощать в жизнь самые смелые проекты.</div>
-            </div>
-            <div class="main_why__block">
-                <div class="main_why__img">
-                    <picture><source srcset="./img/w3.webp" type="image/webp"><img src="./img/w3.png" alt="Продолжай развиваться"></picture>
-                </div>
-                <div class="main_why__tit">Продолжай развиваться</div>
-                <div class="main_why__txt">Если тебе понравится работать с нами — оставайся и стань частью одной из команд бизнесов.</div>
-            </div>
-        </div>
-    </div>
-</div>
-            <div class="main_company">
-    <div class="main_company__in center_block">
-        <div class="main_company__title">Компании</div>
-        <div class="main_company__blocks">
-            <a href="#" class="main_company__block">
-                <div class="main_company__img">
-                    <picture><source srcset="./img/c1.webp" type="image/webp"><img src="./img/c1.png" alt="X5 Retail Group"></picture>
-                </div>
-                <div class="main_company__name">X5 Retail Group</div>
-            </a>
-            <a href="#" class="main_company__block">
-                <div class="main_company__img">
-                    <picture><source srcset="./img/c2.webp" type="image/webp"><img src="./img/c2.png" alt="Stvorka"></picture>
-                </div>
-                <div class="main_company__name">Stvorka</div>
-            </a>
-            <a href="#" class="main_company__block">
-                <div class="main_company__img">
-                    <picture><source srcset="./img/c3.webp" type="image/webp"><img src="./img/c3.png" alt="Тинькофф"></picture>
-                </div>
-                <div class="main_company__name">Тинькофф</div>
-            </a>
-            <a href="#" class="main_company__block">
-                <div class="main_company__img">
-                    <picture><source srcset="./img/c4.webp" type="image/webp"><img src="./img/c4.png" alt="ВТБ"></picture>
-                </div>
-                <div class="main_company__name">ВТБ</div>
-            </a>
-            <a href="#" class="main_company__block">
-                <div class="main_company__img">
-                    <picture><source srcset="./img/c5.webp" type="image/webp"><img src="./img/c5.png" alt="Магнит"></picture>
-                </div>
-                <div class="main_company__name">Магнит</div>
-            </a>
-            <a href="#" class="main_company__block">
-                <div class="main_company__img">
-                    <picture><source srcset="./img/c6.webp" type="image/webp"><img src="./img/c6.png" alt="Сбербанк"></picture>
-                </div>
-                <div class="main_company__name">Сбербанк</div>
-            </a>
         </div>
     </div>
 </div>

@@ -382,91 +382,14 @@ template {
 @font-face {
   font-family: "Stapel";
   font-display: swap;
-  src: url("../fonts/Stapel-Bold.woff2") format("woff2"), url("../fonts/Stapel-Bold.woff") format("woff"), url("../fonts/Stapel-Bold.ttf") format("ttf");
-  font-weight: 700;
-}
-
-@font-face {
-  font-family: "Stapel";
-  font-display: swap;
-  src: url("../fonts/Stapel-ExpandedExtraBold.woff2") format("woff2"), url("../fonts/Stapel-ExpandedExtraBold.woff") format("woff"), url("../fonts/Stapel-ExpandedExtraBold.ttf") format("ttf");
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: "Stapel";
-  font-display: swap;
-  src: url("../fonts/Stapel-ExtraBold.woff2") format("woff2"), url("../fonts/Stapel-ExtraBold.woff") format("woff"), url("../fonts/Stapel-ExtraBold.ttf") format("ttf");
-  font-weight: 800;
-}
-
-@font-face {
-  font-family: "Stapel";
-  font-display: swap;
   src: url("../fonts/Stapel-Medium.woff2") format("woff2"), url("../fonts/Stapel-Medium.woff") format("woff"), url("../fonts/Stapel-Medium.ttf") format("ttf");
   font-weight: 500;
 }
 
 @font-face {
-  font-family: "Stapel";
+  font-family: "Stapel_Regular";
   font-display: swap;
-  src: url("../fonts/Stapel-SemiExpandedBlack.woff2") format("woff2"), url("../fonts/Stapel-SemiExpandedBlack.woff") format("woff"), url("../fonts/Stapel-SemiExpandedBlack.ttf") format("ttf");
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: "Stapel";
-  font-display: swap;
-  src: url("../fonts/Stapel-SemiExpandedExtraBold.woff2") format("woff2"), url("../fonts/Stapel-SemiExpandedExtraBold.woff") format("woff"), url("../fonts/Stapel-SemiExpandedExtraBold.ttf") format("ttf");
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: "Stapel";
-  font-display: swap;
-  src: url("../fonts/Stapel-SemiExpandedBold.woff2") format("woff2"), url("../fonts/Stapel-SemiExpandedBold.woff") format("woff"), url("../fonts/Stapel-SemiExpandedBold.ttf") format("ttf");
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: "Stapel";
-  font-display: swap;
-  src: url("../fonts/Stapel-SemiExpandedMedium.woff2") format("woff2"), url("../fonts/Stapel-SemiExpandedMedium.woff") format("woff"), url("../fonts/Stapel-SemiExpandedMedium.ttf") format("ttf");
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: "Stapel";
-  font-display: swap;
-  src: url("../fonts/Stapel-Light.woff2") format("woff2"), url("../fonts/Stapel-Light.woff") format("woff"), url("../fonts/Stapel-Light.ttf") format("ttf");
-  font-weight: 300;
-}
-
-@font-face {
-  font-family: "Stapel";
-  font-display: swap;
-  src: url("../fonts/Stapel-ExtraLight.woff2") format("woff2"), url("../fonts/Stapel-ExtraLight.woff") format("woff"), url("../fonts/Stapel-ExtraLight.ttf") format("ttf");
-  font-weight: 200;
-}
-
-@font-face {
-  font-family: "StapelText";
-  font-display: swap;
-  src: url("../fonts/StapelText-Bold.woff2") format("woff2"), url("../fonts/StapelText-Bold.woff") format("woff"), url("../fonts/StapelText-Bold.ttf") format("ttf");
-  font-weight: 700;
-}
-
-@font-face {
-  font-family: "Stapel";
-  font-display: swap;
-  src: url("../fonts/Stapel-ExpandedBlack.woff2") format("woff2"), url("../fonts/Stapel-ExpandedBlack.woff") format("woff"), url("../fonts/Stapel-ExpandedBlack.ttf") format("ttf");
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: "Stapel";
-  font-display: swap;
-  src: url("../fonts/Stapel-ExpandedBold.woff2") format("woff2"), url("../fonts/Stapel-ExpandedBold.woff") format("woff"), url("../fonts/Stapel-ExpandedBold.ttf") format("ttf");
+  src: url("../fonts/Stapel_Regular.woff2") format("woff2"), url("../fonts/Stapel_Regular.woff") format("woff"), url("../fonts/Stapel_Regular.ttf") format("ttf");
   font-weight: 400;
 }
 
@@ -485,6 +408,7 @@ template {
   --orange-hover: #ff5e25;
   --font-family: "Noto Sans", sans-serif;
   --second-family: "Stapel", sans-serif;
+  --third-family: "Stapel_Regular", sans-serif;
 }
 
 body {
@@ -505,8 +429,8 @@ html,
 body {
   margin: 0;
   padding: 0;
-  background: var(--white);
   height: auto;
+  background: var(--background);
 }
 
 .ovh {
@@ -760,10 +684,235 @@ textarea {
   align-items: center;
 }
 
+.staj_block {
+  display: flex;
+  padding-top: 2.5vw;
+}
+
+.staj_block__lside {
+  flex: 0 0 14.4791666667vw;
+  margin-right: 1.7708333333vw;
+}
+
+.staj_block__rside {
+  width: 100%;
+}
+
+.staj_block__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.0416666667vw;
+}
+
+.staj_block__title {
+  margin: 0;
+  font-family: var(--third-family);
+  font-weight: 400;
+  font-size: 2.0833333333vw;
+  line-height: 120%;
+  color: var(--black);
+  margin-bottom: 0.2083333333vw;
+}
+
+.staj_block__search {
+  font-weight: 400;
+  font-size: 0.8333333333vw;
+  line-height: 150%;
+  color: var(--grey);
+}
+
+.staj_block__views {
+  display: flex;
+  flex: 0 0vw 75;
+  margin-left: 0.5208333333vw;
+  gap: 0.5208333333vw;
+  align-items: center;
+}
+
+.staj_block__view {
+  border: 1px solid var(--grey);
+  border-radius: 0.4166666667vw;
+  width: 1.6666666667vw;
+  height: 1.6666666667vw;
+  background-color: #fff;
+  cursor: pointer;
+  background-position: 50% 50%;
+  background-size: 1.0416666667vw;
+  background-repeat: no-repeat;
+}
+
+.staj_block__view--vitrin {
+  background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M2.43661 2.43664C2.67443 2.19882 2.99698 2.06522 3.3333 2.06522H7.49997C7.83629 2.06522 8.15884 2.19882 8.39666 2.43664C8.63448 2.67446 8.76808 2.99701 8.76808 3.33333V7.5C8.76808 7.83632 8.63448 8.15887 8.39666 8.39669C8.15884 8.63451 7.83629 8.76811 7.49997 8.76811H3.3333C2.99698 8.76811 2.67443 8.63451 2.43661 8.39669C2.19879 8.15887 2.06519 7.83632 2.06519 7.5V3.33333C2.06519 2.99701 2.19879 2.67446 2.43661 2.43664ZM3.3333 2.93478C3.2276 2.93478 3.12623 2.97677 3.05148 3.05151C2.97674 3.12626 2.93475 3.22763 2.93475 3.33333V7.5C2.93475 7.6057 2.97674 7.70707 3.05148 7.78182C3.12623 7.85656 3.2276 7.89855 3.3333 7.89855H7.49997C7.60567 7.89855 7.70704 7.85656 7.78179 7.78182C7.85653 7.70707 7.89852 7.6057 7.89852 7.5V3.33333C7.89852 3.22763 7.85653 3.12626 7.78179 3.05151C7.70704 2.97677 7.60567 2.93478 7.49997 2.93478H3.3333ZM11.6033 2.43664C11.8411 2.19882 12.1636 2.06522 12.5 2.06522H16.6666C17.003 2.06522 17.3255 2.19882 17.5633 2.43664C17.8011 2.67446 17.9348 2.99701 17.9348 3.33333V7.5C17.9348 7.83632 17.8011 8.15887 17.5633 8.39669C17.3255 8.63451 17.003 8.76811 16.6666 8.76811H12.5C12.1636 8.76811 11.8411 8.63451 11.6033 8.39669C11.3655 8.15887 11.2319 7.83632 11.2319 7.5V3.33333C11.2319 2.99701 11.3655 2.67446 11.6033 2.43664ZM12.5 2.93478C12.3943 2.93478 12.2929 2.97677 12.2182 3.05151C12.1434 3.12626 12.1014 3.22763 12.1014 3.33333V7.5C12.1014 7.6057 12.1434 7.70707 12.2182 7.78182C12.2929 7.85656 12.3943 7.89855 12.5 7.89855H16.6666C16.7723 7.89855 16.8737 7.85656 16.9485 7.78182C17.0232 7.70707 17.0652 7.6057 17.0652 7.5V3.33333C17.0652 3.22763 17.0232 3.12626 16.9485 3.05151C16.8737 2.97677 16.7723 2.93478 16.6666 2.93478H12.5ZM2.43661 11.6033C2.67443 11.3655 2.99698 11.2319 3.3333 11.2319H7.49997C7.83629 11.2319 8.15884 11.3655 8.39666 11.6033C8.63448 11.8411 8.76808 12.1637 8.76808 12.5V16.6667C8.76808 17.003 8.63448 17.3255 8.39666 17.5634C8.15884 17.8012 7.83629 17.9348 7.49997 17.9348H3.3333C2.99698 17.9348 2.67443 17.8012 2.43661 17.5634C2.19879 17.3255 2.06519 17.003 2.06519 16.6667V12.5C2.06519 12.1637 2.19879 11.8411 2.43661 11.6033ZM3.3333 12.1014C3.2276 12.1014 3.12623 12.1434 3.05148 12.2182C2.97674 12.2929 2.93475 12.3943 2.93475 12.5V16.6667C2.93475 16.7724 2.97674 16.8737 3.05148 16.9485C3.12623 17.0232 3.2276 17.0652 3.3333 17.0652H7.49997C7.60567 17.0652 7.70704 17.0232 7.78179 16.9485C7.85653 16.8737 7.89852 16.7724 7.89852 16.6667V12.5C7.89852 12.3943 7.85653 12.2929 7.78179 12.2182C7.70704 12.1434 7.60567 12.1014 7.49997 12.1014H3.3333ZM11.6033 11.6033C11.8411 11.3655 12.1636 11.2319 12.5 11.2319H16.6666C17.003 11.2319 17.3255 11.3655 17.5633 11.6033C17.8011 11.8411 17.9348 12.1637 17.9348 12.5V16.6667C17.9348 17.003 17.8011 17.3255 17.5633 17.5634C17.3255 17.8012 17.003 17.9348 16.6666 17.9348H12.5C12.1636 17.9348 11.8411 17.8012 11.6033 17.5634C11.3655 17.3255 11.2319 17.003 11.2319 16.6667V12.5C11.2319 12.1637 11.3655 11.8411 11.6033 11.6033ZM12.5 12.1014C12.3943 12.1014 12.2929 12.1434 12.2182 12.2182C12.1434 12.2929 12.1014 12.3943 12.1014 12.5V16.6667C12.1014 16.7724 12.1434 16.8737 12.2182 16.9485C12.2929 17.0232 12.3943 17.0652 12.5 17.0652H16.6666C16.7723 17.0652 16.8737 17.0232 16.9485 16.9485C17.0232 16.8737 17.0652 16.7724 17.0652 16.6667V12.5C17.0652 12.3943 17.0232 12.2929 16.9485 12.2182C16.8737 12.1434 16.7723 12.1014 16.6666 12.1014H12.5Z' fill='%23596077' /%3E%3C/svg%3E");
+}
+
+.staj_block__view--vitrin:hover,
+.staj_block__view--vitrin.isActive {
+  background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M2.43661 2.43664C2.67443 2.19882 2.99698 2.06522 3.3333 2.06522H7.49997C7.83629 2.06522 8.15884 2.19882 8.39666 2.43664C8.63448 2.67446 8.76808 2.99701 8.76808 3.33333V7.5C8.76808 7.83632 8.63448 8.15887 8.39666 8.39669C8.15884 8.63451 7.83629 8.76811 7.49997 8.76811H3.3333C2.99698 8.76811 2.67443 8.63451 2.43661 8.39669C2.19879 8.15887 2.06519 7.83632 2.06519 7.5V3.33333C2.06519 2.99701 2.19879 2.67446 2.43661 2.43664ZM3.3333 2.93478C3.2276 2.93478 3.12623 2.97677 3.05148 3.05151C2.97674 3.12626 2.93475 3.22763 2.93475 3.33333V7.5C2.93475 7.6057 2.97674 7.70707 3.05148 7.78182C3.12623 7.85656 3.2276 7.89855 3.3333 7.89855H7.49997C7.60567 7.89855 7.70704 7.85656 7.78179 7.78182C7.85653 7.70707 7.89852 7.6057 7.89852 7.5V3.33333C7.89852 3.22763 7.85653 3.12626 7.78179 3.05151C7.70704 2.97677 7.60567 2.93478 7.49997 2.93478H3.3333ZM11.6033 2.43664C11.8411 2.19882 12.1636 2.06522 12.5 2.06522H16.6666C17.003 2.06522 17.3255 2.19882 17.5633 2.43664C17.8011 2.67446 17.9348 2.99701 17.9348 3.33333V7.5C17.9348 7.83632 17.8011 8.15887 17.5633 8.39669C17.3255 8.63451 17.003 8.76811 16.6666 8.76811H12.5C12.1636 8.76811 11.8411 8.63451 11.6033 8.39669C11.3655 8.15887 11.2319 7.83632 11.2319 7.5V3.33333C11.2319 2.99701 11.3655 2.67446 11.6033 2.43664ZM12.5 2.93478C12.3943 2.93478 12.2929 2.97677 12.2182 3.05151C12.1434 3.12626 12.1014 3.22763 12.1014 3.33333V7.5C12.1014 7.6057 12.1434 7.70707 12.2182 7.78182C12.2929 7.85656 12.3943 7.89855 12.5 7.89855H16.6666C16.7723 7.89855 16.8737 7.85656 16.9485 7.78182C17.0232 7.70707 17.0652 7.6057 17.0652 7.5V3.33333C17.0652 3.22763 17.0232 3.12626 16.9485 3.05151C16.8737 2.97677 16.7723 2.93478 16.6666 2.93478H12.5ZM2.43661 11.6033C2.67443 11.3655 2.99698 11.2319 3.3333 11.2319H7.49997C7.83629 11.2319 8.15884 11.3655 8.39666 11.6033C8.63448 11.8411 8.76808 12.1637 8.76808 12.5V16.6667C8.76808 17.003 8.63448 17.3255 8.39666 17.5634C8.15884 17.8012 7.83629 17.9348 7.49997 17.9348H3.3333C2.99698 17.9348 2.67443 17.8012 2.43661 17.5634C2.19879 17.3255 2.06519 17.003 2.06519 16.6667V12.5C2.06519 12.1637 2.19879 11.8411 2.43661 11.6033ZM3.3333 12.1014C3.2276 12.1014 3.12623 12.1434 3.05148 12.2182C2.97674 12.2929 2.93475 12.3943 2.93475 12.5V16.6667C2.93475 16.7724 2.97674 16.8737 3.05148 16.9485C3.12623 17.0232 3.2276 17.0652 3.3333 17.0652H7.49997C7.60567 17.0652 7.70704 17.0232 7.78179 16.9485C7.85653 16.8737 7.89852 16.7724 7.89852 16.6667V12.5C7.89852 12.3943 7.85653 12.2929 7.78179 12.2182C7.70704 12.1434 7.60567 12.1014 7.49997 12.1014H3.3333ZM11.6033 11.6033C11.8411 11.3655 12.1636 11.2319 12.5 11.2319H16.6666C17.003 11.2319 17.3255 11.3655 17.5633 11.6033C17.8011 11.8411 17.9348 12.1637 17.9348 12.5V16.6667C17.9348 17.003 17.8011 17.3255 17.5633 17.5634C17.3255 17.8012 17.003 17.9348 16.6666 17.9348H12.5C12.1636 17.9348 11.8411 17.8012 11.6033 17.5634C11.3655 17.3255 11.2319 17.003 11.2319 16.6667V12.5C11.2319 12.1637 11.3655 11.8411 11.6033 11.6033ZM12.5 12.1014C12.3943 12.1014 12.2929 12.1434 12.2182 12.2182C12.1434 12.2929 12.1014 12.3943 12.1014 12.5V16.6667C12.1014 16.7724 12.1434 16.8737 12.2182 16.9485C12.2929 17.0232 12.3943 17.0652 12.5 17.0652H16.6666C16.7723 17.0652 16.8737 17.0232 16.9485 16.9485C17.0232 16.8737 17.0652 16.7724 17.0652 16.6667V12.5C17.0652 12.3943 17.0232 12.2929 16.9485 12.2182C16.8737 12.1434 16.7723 12.1014 16.6666 12.1014H12.5Z' fill='white' /%3E%3C/svg%3E");
+  background-color: var(--violet);
+}
+
+.staj_block__view--list {
+  background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M1.8479 5C1.8479 4.63981 2.13989 4.34782 2.50007 4.34782H2.50841C2.86859 4.34782 3.16058 4.63981 3.16058 5C3.16058 5.36018 2.86859 5.65217 2.50841 5.65217H2.50007C2.13989 5.65217 1.8479 5.36018 1.8479 5ZM6.01457 5C6.01457 4.63981 6.30656 4.34782 6.66674 4.34782H17.5001C17.8603 4.34782 18.1522 4.63981 18.1522 5C18.1522 5.36018 17.8603 5.65217 17.5001 5.65217H6.66674C6.30656 5.65217 6.01457 5.36018 6.01457 5ZM1.8479 10C1.8479 9.63981 2.13989 9.34782 2.50007 9.34782H2.50841C2.86859 9.34782 3.16058 9.63981 3.16058 10C3.16058 10.3602 2.86859 10.6522 2.50841 10.6522H2.50007C2.13989 10.6522 1.8479 10.3602 1.8479 10ZM6.01457 10C6.01457 9.63981 6.30656 9.34782 6.66674 9.34782H17.5001C17.8603 9.34782 18.1522 9.63981 18.1522 10C18.1522 10.3602 17.8603 10.6522 17.5001 10.6522H6.66674C6.30656 10.6522 6.01457 10.3602 6.01457 10ZM1.8479 15C1.8479 14.6398 2.13989 14.3478 2.50007 14.3478H2.50841C2.86859 14.3478 3.16058 14.6398 3.16058 15C3.16058 15.3602 2.86859 15.6522 2.50841 15.6522H2.50007C2.13989 15.6522 1.8479 15.3602 1.8479 15ZM6.01457 15C6.01457 14.6398 6.30656 14.3478 6.66674 14.3478H17.5001C17.8603 14.3478 18.1522 14.6398 18.1522 15C18.1522 15.3602 17.8603 15.6522 17.5001 15.6522H6.66674C6.30656 15.6522 6.01457 15.3602 6.01457 15Z' fill='%23596077' /%3E%3C/svg%3E");
+}
+
+.staj_block__view--list:hover,
+.staj_block__view--list.isActive {
+  background-color: var(--violet);
+  background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M1.8479 5C1.8479 4.63981 2.13989 4.34782 2.50007 4.34782H2.50841C2.86859 4.34782 3.16058 4.63981 3.16058 5C3.16058 5.36018 2.86859 5.65217 2.50841 5.65217H2.50007C2.13989 5.65217 1.8479 5.36018 1.8479 5ZM6.01457 5C6.01457 4.63981 6.30656 4.34782 6.66674 4.34782H17.5001C17.8603 4.34782 18.1522 4.63981 18.1522 5C18.1522 5.36018 17.8603 5.65217 17.5001 5.65217H6.66674C6.30656 5.65217 6.01457 5.36018 6.01457 5ZM1.8479 10C1.8479 9.63981 2.13989 9.34782 2.50007 9.34782H2.50841C2.86859 9.34782 3.16058 9.63981 3.16058 10C3.16058 10.3602 2.86859 10.6522 2.50841 10.6522H2.50007C2.13989 10.6522 1.8479 10.3602 1.8479 10ZM6.01457 10C6.01457 9.63981 6.30656 9.34782 6.66674 9.34782H17.5001C17.8603 9.34782 18.1522 9.63981 18.1522 10C18.1522 10.3602 17.8603 10.6522 17.5001 10.6522H6.66674C6.30656 10.6522 6.01457 10.3602 6.01457 10ZM1.8479 15C1.8479 14.6398 2.13989 14.3478 2.50007 14.3478H2.50841C2.86859 14.3478 3.16058 14.6398 3.16058 15C3.16058 15.3602 2.86859 15.6522 2.50841 15.6522H2.50007C2.13989 15.6522 1.8479 15.3602 1.8479 15ZM6.01457 15C6.01457 14.6398 6.30656 14.3478 6.66674 14.3478H17.5001C17.8603 14.3478 18.1522 14.6398 18.1522 15C18.1522 15.3602 17.8603 15.6522 17.5001 15.6522H6.66674C6.30656 15.6522 6.01457 15.3602 6.01457 15Z' fill='white' /%3E%3C/svg%3E");
+}
+
+.staj_block__blocks {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -0.5208333333vw;
+  margin-right: -0.5208333333vw;
+}
+
+.staj_block__block {
+  width: calc(50% - 1.0416666667vw);
+  margin-left: 0.5208333333vw;
+  margin-right: 0.5208333333vw;
+  margin-bottom: 1.0416666667vw;
+  box-shadow: 0 12px 24px 0 rgba(109, 109, 109, 0.04);
+  background: var(--white);
+  border-radius: 1.0416666667vw;
+  padding: 1.0416666667vw;
+  display: flex;
+  align-items: center;
+}
+
+.staj_block__l-side {
+  width: 100%;
+}
+
+.staj_block__tit {
+  margin-bottom: 0.4166666667vw;
+  font-family: var(--third-family);
+  font-weight: 300;
+  font-size: 0.8333333333vw;
+  line-height: 125%;
+  letter-spacing: 0.02em;
+  color: var(--violet);
+}
+
+.staj_block__price {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 0.8333333333vw;
+  line-height: 125%;
+  letter-spacing: 0.02em;
+  color: var(--black);
+  margin-bottom: 0.625vw;
+}
+
+.staj_block__work {
+  margin-bottom: 0.8333333333vw;
+  font-weight: 400;
+  font-size: 0.8333333333vw;
+  line-height: 150%;
+  color: var(--grey);
+}
+
+.staj_block__btn {
+  display: inline-block;
+  border: 0;
+  font-weight: 400;
+  font-size: 0.8333333333vw;
+  line-height: 150%;
+  color: var(--white);
+  cursor: pointer;
+  border-radius: 0.4166666667vw;
+  padding: 0.4166666667vw 0.8333333333vw;
+  background: var(--orange);
+}
+
+.staj_block__btn:hover {
+  background: var(--orange-hover);
+}
+
+.staj_block__r-side {
+  margin-left: 2.0833333333vw;
+  flex: 0 0 4.1666666667vw;
+  width: 4.1666666667vw;
+  height: 4.1666666667vw;
+  font-size: 0;
+}
+
+.staj_block__r-side img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.staj_block__more {
+  text-align: center;
+}
+
+.staj_block__more a {
+  text-decoration: none;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 400;
+  font-size: 0.8333333333vw;
+  line-height: 150%;
+  color: var(--white);
+  background: var(--violet);
+  border-radius: 0.4166666667vw;
+  padding: 0.625vw 1.0416666667vw;
+}
+
+.staj_block__more a:hover {
+  background: var(--violet-hover);
+}
+
+.staj_block__content {
+  display: none;
+}
+
+.staj_block__content.isActive {
+  display: block;
+}
+
+.staj_block .staj_block__content--list .staj_block__blocks {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.staj_block .staj_block__content--list .staj_block__block {
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
+  flex-direction: row-reverse;
+}
+
+.staj_block .staj_block__content--list .staj_block__r-side {
+  flex: 0 0 4.1666666667vw;
+  margin-right: 2.0833333333vw;
+  margin-left: 0;
+}
+
+.staj_block .staj_block__content--list .staj_block__l-side {
+  display: flex;
+  align-items: center;
+}
+
+.staj_block .staj_block__content--list .staj_block__into {
+  width: 100%;
+}
+
+.staj_block .staj_block__content--list .staj_block__btn {
+  flex: 0 0 7.2916666667vw;
+  margin-left: 2.0833333333vw;
+}
+
 .main_first {
   padding-top: 2.0833333333vw;
   padding-bottom: 3.3333333333vw;
   text-align: center;
+  background: var(--white);
 }
 
 .main_first__title {
@@ -891,7 +1040,7 @@ textarea {
 
 .main_posts__tit {
   margin-bottom: 0.4166666667vw;
-  font-family: var(--second-family);
+  font-family: var(--third-family);
   font-weight: 300;
   font-size: 0.8333333333vw;
   line-height: 125%;
@@ -973,6 +1122,7 @@ textarea {
 
 .main_why {
   padding-top: 3.3333333333vw;
+  background: var(--white);
 }
 
 .main_why__title {
@@ -1039,6 +1189,7 @@ textarea {
 .main_company {
   padding-top: 1.6666666667vw;
   overflow: hidden;
+  background: var(--white);
 }
 
 .main_company__title {
@@ -1097,7 +1248,10 @@ textarea {
 }
 
 .footer {
-  margin-top: 1.6666666667vw;
+  padding-top: 1.6666666667vw;
+}
+
+.footer__bg {
   background: var(--violet);
   padding-top: 2.0833333333vw;
   padding-bottom: 1.0416666667vw;
@@ -1456,6 +1610,75 @@ textarea {
     border-radius: 8px;
   }
 
+  .staj_block {
+    padding-top: 20px;
+  }
+
+  .staj_block__top {
+    margin-bottom: 16px;
+  }
+
+  .staj_block__title {
+    font-size: 32px;
+    margin-bottom: 4px;
+  }
+
+  .staj_block__search {
+    font-size: 16px;
+  }
+
+  .staj_block__blocks {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .staj_block__block {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    padding: 16px;
+  }
+
+  .staj_block__tit {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+
+  .staj_block__price {
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+
+  .staj_block__work {
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+
+  .staj_block__btn {
+    font-size: 16px;
+    padding: 8px 16px;
+    border-radius: 8px;
+  }
+
+  .staj_block__r-side {
+    width: 80px;
+    height: 80px;
+    flex: 0 0 80px;
+    margin-left: 8px;
+  }
+
+  .staj_block__more {
+    margin-top: 4px;
+  }
+
+  .staj_block__more a {
+    font-size: 16px;
+    border-radius: 8px;
+    padding: 12px 20px;
+  }
+
   .main_first {
     padding-top: 24px;
     padding-bottom: 32px;
@@ -1628,9 +1851,12 @@ textarea {
   }
 
   .footer {
+    padding-top: 24px;
+  }
+
+  .footer__bg {
     padding-top: 40px;
     padding-bottom: 20px;
-    margin-top: 24px;
   }
 
   .footer__top {

@@ -1,12 +1,16 @@
 .footer {
-    margin-top: vw(32);
-    background: var(--violet);
-    padding-top: vw(40);
-    padding-bottom: vw(20);
+    padding-top: vw(32);
     @media all and (max-width: 1023px) {
-        padding-top: 40px;
-        padding-bottom: 20px;
-        margin-top: 24px;
+        padding-top: 24px;
+    }
+    &__bg {
+        background: var(--violet);
+        padding-top: vw(40);
+        padding-bottom: vw(20);
+        @media all and (max-width: 1023px) {
+            padding-top: 40px;
+            padding-bottom: 20px;
+        }
     }
     &__top {
         display: flex;
