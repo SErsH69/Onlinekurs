@@ -8,8 +8,8 @@
     <title>Страница Стажировки</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap&_v=20240625102508" rel="stylesheet">
-	<link rel="stylesheet" href="css/style.css?_v=20240625102508">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap&_v=20240625104347" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css?_v=20240625104347">
 </head>
 <body>
     <div class="wrapper" id="app" :class="{isMobile, isTablet}">
@@ -149,6 +149,9 @@
     <a href="/" class="block_info__back">Все стажировки</a>
     <div class="block_info__blocks">
         <div class="block_info__l-side" v-if="sizes.window >= 1023">
+            <h1 class="block_info__info--name">Stworka</h1>
+            <div class="block_info__info--city">Санкт-Петербург</div>
+            <a href="stworka.com" target="_blank" rel="noopener noreferrer" class="block_info__info--site">stworka.com</a>
             <div class="block_info__about">
                 <span>Стажировки компании</span>
                 <a href="#">4 стажировки</a>
@@ -157,29 +160,28 @@
                 <span>Сферы деятельности</span>
                 Информационные технологии, системная интеграция, интернет
             </div>
-            <div class="block_info__star">
-                <span>4,5</span>
-                Оценка Dream Job
-            </div>
-            <div class="block_info__star">
-                <span>100%</span>
-                Рекомендуют работодателя
-            </div>
         </div>
         <div class="block_info__r-side">
-            <div class="block_info__info">
-                <div class="block_info__info--l-side">
-                    <picture><source srcset="./img/s2.webp" type="image/webp"><img src="./img/s2.png" alt=""></picture>
-                </div>
-                <div class="block_info__info--r-side">
-                    <h1 class="block_info__info--name">Stworka</h1>
-                    <div class="block_info__info--city">Санкт-Петербург</div>
-                    <a href="stworka.com" target="_blank" rel="noopener noreferrer" class="block_info__info--site">stworka.com</a>
-                </div>
+            <div class="block_info__abt">
+                <div class="block_info__abt--title">Стажер в отдел рекламы и коммуникаций</div>
+                <div class="block_info__abt--text">от 58 000 до 70 000 ₽ до вычета налогов</div>
+                <button data-modal-id="2" class="block_info__abt--btn" v-if="sizes.window >= 1023">Откликнуться</button>
             </div>
-            <div class="block_info__text">Привет, мы Stworka! <br>
-                Онлайн-платформа для строительного бизнеса. С нашей помощью строители автоматизируют работу и начинают вести дела в онлайне. Мы охотимся на самых талантливых людей и стремимся давать шанс новичкам, которые удивляют нас. Всё ради нашей цели — изменить строительство и быть лучшим выбором для цифровизации компании. Присоединяйся и пристёгивайся, мы взлетаем!)</div>
+            <div class="block_info__text">
+                <p>Leoo Company - рекламная организация, предоставляющая услуги BTL-рекламы крупнейшим международным НКО в г. Сочи.</p>
+                <p>За время нашей работы мы доказали, что BTL-реклама - это один из самых эффективных инструментов продвижения, особенно в сегменте благотворительности и фандрайзинга.</p>
+                <p>Мы - сплоченная и сильная команда профессионалов, ждем в свои ряды амбициозных и позитивных людей, которые хотят учиться, развиваться и построить карьеру в сфере рекламы, а также обрести новых друзей и прокачать свои навыки.</p>
+                <p>Чем тебе предстоит заниматься на первом этапе: <br>
+                Проходить поэтапное обучение со своим наставником; <br>
+                — Проводить презентации о деятельности фондов-заказчиков; <br>
+                — Работать с людьми, взаимодействовать с различной аудиторией в формате face-to-face в рамках мероприятий проекта; <br>
+                — Вести отчетность об эффективности проделанной работы. <br>
+                — В дальнейшем же тебя ждет погружение в обучение новых сотрудников, управление персоналом и множество других интересных задач в области ведения нашего бизнеса.</p>
+            </div>
             <div class="block_info__l-side" v-if="sizes.window <= 1023">
+                <h1 class="block_info__info--name">Stworka</h1>
+                <div class="block_info__info--city">Санкт-Петербург</div>
+                <a href="stworka.com" target="_blank" rel="noopener noreferrer" class="block_info__info--site">stworka.com</a>
                 <div class="block_info__about">
                     <span>Стажировки компании</span>
                     <a href="#">4 стажировки</a>
@@ -188,62 +190,8 @@
                     <span>Сферы деятельности</span>
                     Информационные технологии, системная интеграция, интернет
                 </div>
-                <div class="block_info__star">
-                    <span>4,5</span>
-                    Оценка Dream Job
-                </div>
-                <div class="block_info__star">
-                    <span>100%</span>
-                    Рекомендуют работодателя
-                </div>
             </div>
-            <div class="block_info__tit">Стажировки компании</div>
-            <div class="staj_block__blocks">
-                <div class="staj_block__block">
-                    <div class="staj_block__l-side">
-                        <div class="staj_block__tit">Начинающий специалист/стажер</div>
-                        <div class="staj_block__price">15 000 - 30 000 ₽</div>
-                        <div class="staj_block__work">X5 Retail Group</div>
-                        <a href="#" class="staj_block__btn">Откликнуться</a>
-                    </div>
-                    <div class="staj_block__r-side">
-                        <picture><source srcset="./img/s1.webp" type="image/webp"><img src="./img/s1.png" alt=""></picture>
-                    </div>
-                </div>
-                <div class="staj_block__block">
-                    <div class="staj_block__l-side">
-                        <div class="staj_block__tit">Начинающий специалист/стажер</div>
-                        <div class="staj_block__price">15 000 - 30 000 ₽</div>
-                        <div class="staj_block__work">X5 Retail Group</div>
-                        <a href="#" class="staj_block__btn">Откликнуться</a>
-                    </div>
-                    <div class="staj_block__r-side">
-                        <picture><source srcset="./img/s2.webp" type="image/webp"><img src="./img/s2.png" alt=""></picture>
-                    </div>
-                </div>
-                <div class="staj_block__block">
-                    <div class="staj_block__l-side">
-                        <div class="staj_block__tit">Начинающий специалист/стажер</div>
-                        <div class="staj_block__price">15 000 - 30 000 ₽</div>
-                        <div class="staj_block__work">X5 Retail Group</div>
-                        <a href="#" class="staj_block__btn">Откликнуться</a>
-                    </div>
-                    <div class="staj_block__r-side">
-                        <picture><source srcset="./img/s3.webp" type="image/webp"><img src="./img/s3.png" alt=""></picture>
-                    </div>
-                </div>
-                <div class="staj_block__block">
-                    <div class="staj_block__l-side">
-                        <div class="staj_block__tit">Начинающий специалист/стажер</div>
-                        <div class="staj_block__price">15 000 - 30 000 ₽</div>
-                        <div class="staj_block__work">X5 Retail Group</div>
-                        <a href="#" class="staj_block__btn">Откликнуться</a>
-                    </div>
-                    <div class="staj_block__r-side">
-                        <picture><source srcset="./img/s4.webp" type="image/webp"><img src="./img/s4.png" alt=""></picture>
-                    </div>
-                </div>
-            </div>
+            <button data-modal-id="2" class="block_info__abt--btn" v-if="sizes.window <= 1023">Откликнуться</button>
         </div>
     </div>
 </div>
@@ -510,6 +458,6 @@
     </div>
 </div>
     </div>
-    <script src="js/app.min.js?_v=20240625102508"></script>
+    <script src="js/app.min.js?_v=20240625104347"></script>
 </body>
 </html>
