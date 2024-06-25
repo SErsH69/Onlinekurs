@@ -8,8 +8,8 @@
     <title>Страница компании</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap&_v=20240625090433" rel="stylesheet">
-	<link rel="stylesheet" href="css/style.css?_v=20240625090433">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap&_v=20240625101159" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css?_v=20240625101159">
 </head>
 <body>
     <div class="wrapper" id="app" :class="{isMobile, isTablet}">
@@ -148,11 +148,102 @@
             <div class="company_block center_block">
     <a href="/" class="company_block__back">Все стажировки</a>
     <div class="company_block__blocks">
-        <div class="company_block__l-side">
-
+        <div class="company_block__l-side" v-if="sizes.window >= 1023">
+            <div class="company_block__about">
+                <span>Стажировки компании</span>
+                <a href="#">4 стажировки</a>
+            </div>
+            <div class="company_block__about">
+                <span>Сферы деятельности</span>
+                Информационные технологии, системная интеграция, интернет
+            </div>
+            <div class="company_block__star">
+                <span>4,5</span>
+                Оценка Dream Job
+            </div>
+            <div class="company_block__star">
+                <span>100%</span>
+                Рекомендуют работодателя
+            </div>
         </div>
         <div class="company_block__r-side">
-            
+            <div class="company_block__info">
+                <div class="company_block__info--l-side">
+                    <picture><source srcset="./img/s2.webp" type="image/webp"><img src="./img/s2.png" alt=""></picture>
+                </div>
+                <div class="company_block__info--r-side">
+                    <h1 class="company_block__info--name">Stworka</h1>
+                    <div class="company_block__info--city">Санкт-Петербург</div>
+                    <a href="stworka.com" target="_blank" rel="noopener noreferrer" class="company_block__info--site">stworka.com</a>
+                </div>
+            </div>
+            <div class="company_block__text">Привет, мы Stworka! <br>
+                Онлайн-платформа для строительного бизнеса. С нашей помощью строители автоматизируют работу и начинают вести дела в онлайне. Мы охотимся на самых талантливых людей и стремимся давать шанс новичкам, которые удивляют нас. Всё ради нашей цели — изменить строительство и быть лучшим выбором для цифровизации компании. Присоединяйся и пристёгивайся, мы взлетаем!)</div>
+            <div class="company_block__l-side" v-if="sizes.window <= 1023">
+                <div class="company_block__about">
+                    <span>Стажировки компании</span>
+                    <a href="#">4 стажировки</a>
+                </div>
+                <div class="company_block__about">
+                    <span>Сферы деятельности</span>
+                    Информационные технологии, системная интеграция, интернет
+                </div>
+                <div class="company_block__star">
+                    <span>4,5</span>
+                    Оценка Dream Job
+                </div>
+                <div class="company_block__star">
+                    <span>100%</span>
+                    Рекомендуют работодателя
+                </div>
+            </div>
+            <div class="company_block__tit">Стажировки компании</div>
+            <div class="staj_block__blocks">
+                <div class="staj_block__block">
+                    <div class="staj_block__l-side">
+                        <div class="staj_block__tit">Начинающий специалист/стажер</div>
+                        <div class="staj_block__price">15 000 - 30 000 ₽</div>
+                        <div class="staj_block__work">X5 Retail Group</div>
+                        <button data-modal-id="2" class="staj_block__btn">Откликнуться</button>
+                    </div>
+                    <div class="staj_block__r-side">
+                        <picture><source srcset="./img/s1.webp" type="image/webp"><img src="./img/s1.png" alt=""></picture>
+                    </div>
+                </div>
+                <div class="staj_block__block">
+                    <div class="staj_block__l-side">
+                        <div class="staj_block__tit">Начинающий специалист/стажер</div>
+                        <div class="staj_block__price">15 000 - 30 000 ₽</div>
+                        <div class="staj_block__work">X5 Retail Group</div>
+                        <button data-modal-id="2" class="staj_block__btn">Откликнуться</button>
+                    </div>
+                    <div class="staj_block__r-side">
+                        <picture><source srcset="./img/s2.webp" type="image/webp"><img src="./img/s2.png" alt=""></picture>
+                    </div>
+                </div>
+                <div class="staj_block__block">
+                    <div class="staj_block__l-side">
+                        <div class="staj_block__tit">Начинающий специалист/стажер</div>
+                        <div class="staj_block__price">15 000 - 30 000 ₽</div>
+                        <div class="staj_block__work">X5 Retail Group</div>
+                        <button data-modal-id="2" class="staj_block__btn">Откликнуться</button>
+                    </div>
+                    <div class="staj_block__r-side">
+                        <picture><source srcset="./img/s3.webp" type="image/webp"><img src="./img/s3.png" alt=""></picture>
+                    </div>
+                </div>
+                <div class="staj_block__block">
+                    <div class="staj_block__l-side">
+                        <div class="staj_block__tit">Начинающий специалист/стажер</div>
+                        <div class="staj_block__price">15 000 - 30 000 ₽</div>
+                        <div class="staj_block__work">X5 Retail Group</div>
+                        <button data-modal-id="2" class="staj_block__btn">Откликнуться</button>
+                    </div>
+                    <div class="staj_block__r-side">
+                        <picture><source srcset="./img/s4.webp" type="image/webp"><img src="./img/s4.png" alt=""></picture>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
@@ -419,6 +510,6 @@
     </div>
 </div>
     </div>
-    <script src="js/app.min.js?_v=20240625090433"></script>
+    <script src="js/app.min.js?_v=20240625101159"></script>
 </body>
 </html>
